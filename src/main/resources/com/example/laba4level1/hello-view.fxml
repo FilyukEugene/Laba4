@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laba4level1.Controller">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="26.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="openFile" mnemonicParsing="false" onAction="#ClickOnOpenFile" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#ClickOnSaveFile" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#ClickOnSaveAsFile" text="Save as" />
+              <MenuItem mnemonicParsing="false" onAction="#ClickOnCloseFile" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ClickOnCopyText" text="Copy" />
+                  <MenuItem mnemonicParsing="false" onAction="#ClickOnCutText" text="Cut" />
+                  <MenuItem mnemonicParsing="false" onAction="#ClickOnPasteText" text="Paste" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Print">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="All available printers" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ClickOnAbout" text="About" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="textArea" layoutY="28.0" prefHeight="375.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>
