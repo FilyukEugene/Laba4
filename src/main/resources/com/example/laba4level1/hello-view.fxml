@@ -7,31 +7,30 @@
    <children>
       <MenuBar layoutY="2.0" prefHeight="26.0" prefWidth="600.0">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+          <Menu mnemonicParsing="false" text="Файл">
             <items>
-                  <MenuItem fx:id="openFile" mnemonicParsing="false" onAction="#ClickOnOpenFile" text="Open" />
-                  <MenuItem mnemonicParsing="false" onAction="#ClickOnSaveFile" text="Save" />
-                  <MenuItem mnemonicParsing="false" onAction="#ClickOnSaveAsFile" text="Save as" />
-              <MenuItem mnemonicParsing="false" onAction="#ClickOnCloseFile" text="Close" />
+                  <MenuItem fx:id="openFile" mnemonicParsing="false" onAction="#ClickOnOpenFile" text="Відкрити" />
+                  <MenuItem mnemonicParsing="false" onAction="#ClickOnSaveFile" text="Зберегти" />
+              <MenuItem mnemonicParsing="false" onAction="#ClickOnCloseFile" text="Закрити" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
+          <Menu mnemonicParsing="false" text="Редагування">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#ClickOnCopyText" text="Copy" />
-                  <MenuItem mnemonicParsing="false" onAction="#ClickOnCutText" text="Cut" />
-                  <MenuItem mnemonicParsing="false" onAction="#ClickOnPasteText" text="Paste" />
+              <MenuItem mnemonicParsing="false" onAction="#ClickOnCopyText" text="Копіювати вміст" />
+                  <MenuItem mnemonicParsing="false" onAction="#ClickOnCutText" text="Вирізати вміст" />
+                  <MenuItem mnemonicParsing="false" onAction="#ClickOnPasteText" text="Вставити з буферу" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Print">
+          <Menu mnemonicParsing="false" text="Друк">
                <items>
-                  <MenuItem mnemonicParsing="false" text="All available printers" />
+                  <MenuItem mnemonicParsing="false" text="Доступні принтери" />
                </items></Menu>
-            <Menu mnemonicParsing="false" text="Help">
+            <Menu mnemonicParsing="false" text="Інформація">
                <items>
-                  <MenuItem mnemonicParsing="false" onAction="#ClickOnAbout" text="About" />
+                  <MenuItem mnemonicParsing="false" onAction="#ClickOnAbout" text="Додатково" />
                </items></Menu>
         </menus>
       </MenuBar>
-      <TextArea fx:id="textArea" layoutY="28.0" prefHeight="375.0" prefWidth="600.0" />
+      <TextArea fx:id="textArea" layoutX="13.0" layoutY="37.0" prefHeight="353.0" prefWidth="575.0" />
    </children>
 </AnchorPane>
